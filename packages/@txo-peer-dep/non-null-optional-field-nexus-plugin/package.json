@@ -1,0 +1,30 @@
+{
+  "name": "@txo-peer-dep/non-null-optional-field-nexus-plugin",
+  "version": "0.0.0",
+  "description": "Technology Studio - Non null optional field nexus plugin",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technology-studio/non-null-optional-field-nexus-plugin.git"
+  },
+  "author": {
+    "name": "Technology Studio",
+    "email": "npm@technologystudio.sk",
+    "url": "https://github.com/technology-studio/"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn build:clean && yarn build:lib",
+    "build:clean": "yarn rimraf lib",
+    "build:lib": "yarn tsc",
+    "build:watch": "concurrently \"yarn build:watch:lib\"",
+    "build:watch:lib": "yarn tsc --watch",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  }
+}
