@@ -1,6 +1,6 @@
 {
   "name": "@txo/non-null-optional-field-nexus-plugin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Technology Studio - Non null optional field nexus plugin",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
