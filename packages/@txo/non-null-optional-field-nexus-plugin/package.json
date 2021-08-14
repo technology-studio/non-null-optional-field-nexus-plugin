@@ -24,7 +24,10 @@
     "prepare": "yarn build"
   },
   "dependencies": {
+    "lodash.set": "^4.3.2"
   },
   "peerDependencies": {
+    "graphql": "^15.5.1",
+    "nexus": "^1.1.0"
   }
 }
