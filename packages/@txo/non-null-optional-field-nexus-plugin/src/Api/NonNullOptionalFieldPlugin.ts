@@ -44,6 +44,16 @@ type ErrorMap = {
   [key: string]: ErrorMap | null,
 }
 
+declare module 'graphql' {
+  interface GraphQLInputFieldExtensions {
+    nexus?: {
+      config?: {
+        nonNullOptional?: boolean,
+      },
+    },
+  }
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const validate = (value: any, validationType: ValidationType | undefined, path: string[], errorMap: ErrorMap): void => {
   if (value && validationType) {
